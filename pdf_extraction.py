@@ -8,8 +8,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import re
 from typing import List, Dict
-HF_TOKEN="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"
-api = "AIzaSyBm_lflyT7_lLL-Q_h0yvzfXiTAWbE8YeQ"  
+HF_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+api = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
 genai.configure(api_key=api)
 model = genai.GenerativeModel('gemini-2.0-flash')
 
@@ -494,5 +494,6 @@ if __name__ == "__main__":
             print("---")
     else:
         print("No question-answer pairs were generated.")
+
 
     # generate_from_here (processed_text,10)
