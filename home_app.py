@@ -10,12 +10,12 @@ from fpdf import FPDF
 import re
 import pdf_extraction
 # Configure Gemini API
-genai.configure(api_key="AIzaSyDLs4jDhMVdFibW6f__a36DGo1MpWhtRY4")
+genai.configure(api_key="xxxxxxxxxxxxxxxxxxxxxx")
 model = genai.GenerativeModel("models/gemini-1.5-pro")
 
 # App setup
 app = Flask(__name__)
-app.secret_key = 'a_combined_secret_key'
+app.secret_key = 'xxxxxxxxxxxxxxxx'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -397,4 +397,5 @@ if __name__ == "__main__":
     output_file_path2= "final_output2.txt"
     with app.app_context():
         db.create_all()
+
     app.run(debug=True)
