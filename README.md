@@ -41,5 +41,5 @@ Prerequisites
 Python 3.9+
 Google Gemini API Key
 codes:
-pip install -r requirements.txt
+pip install -r requirements.txt,
 python home_app.py
